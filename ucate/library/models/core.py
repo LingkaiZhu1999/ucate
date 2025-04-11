@@ -91,4 +91,4 @@ class BaseModel(tf.keras.Model):
                                 batch_outputs
                             )
         all_outputs = nest.map_structure_up_to(batch_outputs, concat, outputs)
-        return tf_utils.to_numpy_or_python_type(all_outputs)
+        return tf_utils.sync_to_numpy_or_python_type(all_outputs)
