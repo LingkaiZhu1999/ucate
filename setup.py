@@ -16,14 +16,13 @@ setup(
     install_requires=[
         "rpy2",
         "click",
-        "numpy>=1.16.0,<1.19.0",
+        "numpy",
         "scipy",
         "pandas",
-        "sklearn",
+        "scikit-learn",
         "seaborn",
         "matplotlib",
-        "tensorflow==2.3.1",
-        "tensorflow-probability==0.11.1",
+        "tensorflow-probability==0.15.0",
     ],
     entry_points={
         "console_scripts": ["ucate=ucate.application.main:cli"],
