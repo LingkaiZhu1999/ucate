@@ -8,7 +8,7 @@ This repository contains the code to replicate the results reported in
 ```
 $ git clone git@github.com:OATML/ucate.git
 $ cd ucate
-$ conda env create -f environment.yml
+$ CONDA_OVERRIDE_CUDA="11.2" conda env create -f environment.yml
 $ conda activate ucate
 ```
 
